@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/Template_Social.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif;}
+        </style>
+    </head>
+    <body style="background-color: #f5f7f8; width: 100%;margin: 0px; overflow-x: hidden;">
+        <!--NAVIGATION BAR-->
+        <header style="position: sticky;top:0; z-index:10;">
+            <div class="row" style="background-color:#4d636f">
+                <div class="col-lg-12 ">
+                    <div class="custom-navbar">
+                        <ul>
+                            <li class="float_left active"><a href="#"><i class="fa fa-home margin_right"></i>Logo</a></li>
+                            <li class="float_left"><a href="#" title="News"><i class="fa fa-globe"></i></a></li>
+                            <li class="float_left"><a href="#" title="Settings"><i class="fa fa-user"></i></a></li>
+                            <li class="float_left"><a href="#" title="Messages"><i class="fa fa-envelope"></i></a></li>
+                            <li class="float_left"><a href="#" title="Notifications"><i class="fa fa-bell"></i><span class="cust-badge green">3</span></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                      <li><a href="#">One new friend request</a></li>
+                                      <li><a href="#">John Doe posted on your wall</a></li>
+                                      <li><a href="#">Jane likes your post</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul style="float: right;">
+                            <li class="float_right"><a href="#" title="My Account"><img src="../Images/my_account.png" class="circle_img" style="height:23px;width:23px" alt="Avatar"></a></li>
+                        </ul>
+                    </div>
+                    <div class="small-screen-navbar">
+                        <div class="active"><a href="#" class="float_left"><i class="fa fa-home margin_right"></i>Logo</a></div>
+                        <ul class="float_right ">
+                            <li id="myNavbar" class="float_right"><a href="#" title="Menu"><i class="fa fa-bars"></i></a></li>
+                                <div id="myMenu" class="small-screen-menu">
+                                    <ul>
+                                        <li><a href="#">Link1</a></li>
+                                        <li><a href="#">Link2</a></li>
+                                        <li><a href="#">Link3</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Get the button, and when the user clicks on it, execute myFunction
+                document.getElementById("myNavbar").onclick = function() {myNavbarFunction()};
+                
+                /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                function myNavbarFunction() {document.getElementById("myMenu").classList.toggle("show");}
+            </script>	
+        </header>
+
+        <!--**********************************MAIN***************************************************************-->
+        <main>
+            <!--CARDS-->
+            <div class="row">
+                <!--*************    LEFT COLUMN   *************-->
+                <div class="col-lg-3">
+                    <!--*********  CARD-L1  *************-->
+                    <div class="card" title="My Profile">
+                        <h4 style="text-align: center; margin-top: 10px;">My Profile</h4>
+                        <img src="../Images/avatar3.png" class="circle_img my-profile-img" alt="Avatar" >
+                        <hr>
+                        <p ><i class="fa fa-pencil fa-format margin_right text-theme"></i>Designer, UI</p>
+                        <p><i class="fa fa-birthday-cake fa-format margin_right text-theme"></i>London, UK</p>
+                        <p><i class="fa fa-birthday-cake fa-custom-format margin_right text-theme"></i>April 1, 1988</p>
+                    </div>
+
+                    <!--*********  CARD-L2  *************-->
+                    <div class="card" style="padding: 0px;">
+                        <div>
+                            <button id="myBtn1" class="block-display theme-l1 text-align-to-left"><i class="fa fa-circle-o-notch fa-fw margin-right"></i> My Groups</button>
+                                <div id="Demo1" class="hide-content">
+                                    <p class="accordion-content">Some text..</p>
+                                </div>
+                            
+                            <button id="myBtn2" class="block-display theme-l1 text-align-to-left"><i class="fa fa-calendar-check-o fa-fw margin-right"></i> My Events</button>
+                                <div id="Demo2" class="hide-content">
+                                    <p class="accordion-content">Some other text..</p>
+                                </div>
+                                
+                            <button id="myBtn3" class="block-display theme-l1 text-align-to-left"><i class="fa fa-users fa-fw margin-right"></i> My Photos</button>
+                            <div id="Demo3" class="hide-content">
+                                <div class="container-padding">
+                                    <br>
+                                    
+                                    <div>
+                                        <img src="../Images/lights.jpg" class="half_width custom-margin-bottom">
+                                        <img src="../Images/nature.jpg" class="half_width custom-margin-bottom">
+                                    </div>
+                                    <div>
+                                        <img src="../Images/mountains.jpg"  class="half_width custom-margin-bottom">
+                                        <img src="../Images/forest.jpg"  class="half_width custom-margin-bottom">
+                                    </div>
+                                    <div>
+                                        <img src="../Images/nature.jpg"  class="half_width custom-margin-bottom">
+                                        <img src="../Images/snow.jpg"  class="half_width custom-margin-bottom">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        // Get the button, and when the user clicks on it, execute myFunction
+                        document.getElementById("myBtn1").onclick = function() {myFunction1()};
+                        document.getElementById("myBtn2").onclick = function() {myFunction2()};
+                        document.getElementById("myBtn3").onclick = function() {myFunction3()};
+                        
+                        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                        function myFunction1() {document.getElementById("Demo1").classList.toggle("show");}
+                        function myFunction2() {document.getElementById("Demo2").classList.toggle("show");}
+                        function myFunction3() {document.getElementById("Demo3").classList.toggle("show");}
+                    
+                    </script>
+                    <!--*********  CARD-L3  *************-->
+                    <div class="card container-padding">
+                        <p>Interests</p>
+                        <p>
+                            <span class="small_font theme-d5 cust-tag ">News</span>
+                            <span class="cust-tag small_font theme-d4">W3Schools</span>
+                            <span class="cust-tag small_font theme-d3">Labels</span>
+                            <span class="cust-tag small_font theme-d2">Games</span>
+                            <span class="cust-tag small_font theme-d1">Friends</span>
+                            <span class="cust-tag small_font theme">Games</span>
+                            <span class="cust-tag small_font theme-l1">Friends</span>
+                            <span class="cust-tag small_font theme-l2">Food</span>
+                            <span class="cust-tag small_font theme-l3">Design</span>
+                            <span class="cust-tag small_font theme-l4">Art</span>
+                            <span class="cust-tag small_font theme-l5">Photos</span>
+                        </p>
+                    </div>
+                    <!--*********  CARD-L4  *************-->
+                    <div class="card" style="padding: 0px;">
+                        <div class="theme-l4 container-padding">
+                            <span onclick="this.parentElement.parentElement.style.display='none'" class="theme-l3 alert-box"><i class="fa fa-remove"></i></span>
+                            <p style="margin-top: 15px;"><strong>Hey!</strong></p>
+                            <p style="margin-top: 15px;">People are looking at your profile. Find out who.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- div ending of left column--> 
+                </div>
+
+                
+
+                <!--*************    MIDDLE COLUMN    *************-->
+                <div class="col-lg-7" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="card">
+                        <div class="cust-padding">
+                            <h6 class="custom-opacity">Social Media template by w3.css</h6>
+                            <p contenteditable="true" style="border: 1px solid #ccc" class="cust-padding">Status: Feeling Blue</p>
+                            <button class="button-cust-style theme"><i class="fa fa-pencil"></i> Post</button> 
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div>
+                            <br>
+                            <img src="../Images/my_account.png" alt="Avatar" class="float_left margin_right" style="width:60px; border-radius: 50%;">
+                            <span class="custom-opacity" style="float:right;">1 min</span>
+                            <p></p>
+                            <h4>John Doe</h4>
+                            <br>
+                        </div>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora esse sunt corrupti, aliquam explicabo iusto doloribus sint tempore dolore commodi facere, vel id nesciunt minima recusandae omnis architecto nihil. Modi!</p>
+                        <div class="custom-margin-bottom">
+                            <img src="../Images/lights.jpg" alt="Northen Lights" style="float: left;" class="half_width">
+                            <img src="../Images/nature.jpg" alt="Nature" style="float: right;" class="half_width">
+                        </div>
+                        <div class="custom-margin-bottom">
+                            <button type="button" class="button-cust-style theme-d1 custom-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+                            <button type="button" class="button-cust-style theme-d2 custom-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div>
+                            <br>
+                            <img src="../Images/Jane Doe.png" alt="Avatar" class="float_left margin_right" style="width:60px; border-radius: 50%;">
+                            <span class="custom-opacity" style="float:right;">16 min</span>
+                            <p></p>
+                            <h4>Jone Doe</h4>
+                            <br>
+                        </div>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora esse sunt corrupti, aliquam explicabo iusto doloribus sint tempore dolore commodi facere, vel id nesciunt minima recusandae omnis architecto nihil. Modi!</p>
+                        <div class="custom-margin-bottom">
+                            <button type="button" class="button-cust-style theme-d1 custom-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+                            <button type="button" class="button-cust-style theme-d2 custom-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div>
+                            <br>
+                            <img src="../Images/avatar6.png" alt="Avatar" class="float_left margin_right" style="width:60px; border-radius: 50%;">
+                            <span class="custom-opacity" style="float:right;">16 min</span>
+                            <p></p>
+                            <h4>Angie Jane</h4>
+                            <br>
+                        </div>
+                        <hr>
+                        <p>Have you seen this?</p>
+                        <div>
+                            <img src="../Images/nature.jpg" alt="Avatar" style="width: 100%; margin-bottom: 20px;">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea adipisci esse, vero laudantium incidunt placeat sunt distinctio facilis repellendus cupiditate officia iste saepe recusandae consequuntur quibusdam velit fugiat quis eum!</p>
+                        <div class="custom-margin-bottom">
+                            <button type="button" class="button-cust-style theme-d1 custom-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+                            <button type="button" class="button-cust-style theme-d2 custom-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+                        </div>
+                    </div>
+                    <!-- div ending of middle column--> 
+                </div>
+
+                <!-- *************    RIGHT COLUMN    *************-->
+                <div class="col-lg-2">
+                    <div class="card">
+                        <p style="text-align: center;" class="para">Upcoming Events:</p>
+                        <img src="../Images/forest.jpg" alt="Forest" style="width: 100%;">
+                        <p style="text-align: center;" class="para"><strong>Holiday</strong></p>
+                        <p style="text-align: center;" class="para"><strong>Friday 15:00</strong></p>
+                        <p style="text-align: center;" class="para"><strong>Info</strong></p>
+                    </div>
+
+                    <div class="card">
+                        <p style="text-align: center; font-size: 15px;">Friend Request</p>
+                        <img src="../Images/avatar6.png" alt="Avatar" style="width: 50%; margin-left: auto; margin-right: auto;">
+                        <p style=" text-align: center;"> Jane Doe</p>
+                        <div class="custom-opacity">
+                        <button type="button" title="Accept" class="accept_button reject-button-color float_right"><i class="fa fa-check"></i></button>
+                        <button type="button" title="Reject" class="accept_button accept_button_color float_left"><i class="fa fa-remove"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding: 16px 0px;">
+                        <p style="text-align: center;margin: 15px 0px;">ADS</p>
+                    </div>
+
+                    <div class="card" style="padding: 32px 0px;">
+                        <p style="text-align: center;margin: 0px;"><i class="fa fa-bug" style="font-size: 36px"></i></p>
+                    </div>
+                </div><!-- div ending of right column--> 
+            </div><!--main div ending--> 
+        </main>
+
+
+
+        <!--***************************     FOOTER          **************************************************--> 
+        <footer class="custom_footer">
+            <h5>Footer</h5>
+        </footer>  
+        <footer class="custom_footer2">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="color_white"><u>w3.css</u></a></p>
+        </footer>
+    </body>
+</html>
