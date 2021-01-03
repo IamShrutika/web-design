@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+    <head> 
         <link rel="stylesheet" href="../css/Template_Social.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
@@ -10,6 +10,8 @@
         <style>
             html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif;}
         </style>
+        <title>SW Social Template</title>
+        <link rel = "icon" href ="../Images/SW_icon.png" sizes="152x152">
     </head>
     <body style="background-color: #f5f7f8; width: 100%;margin: 0px; overflow-x: hidden;">
         <!--NAVIGATION BAR-->
@@ -18,11 +20,11 @@
                 <div class="col-lg-12 ">
                     <div class="custom-navbar">
                         <ul>
-                            <li class="float_left active"><a href="#"><i class="fa fa-home margin_right"></i>Logo</a></li>
-                            <li class="float_left"><a href="#" title="News"><i class="fa fa-globe"></i></a></li>
-                            <li class="float_left"><a href="#" title="Settings"><i class="fa fa-user"></i></a></li>
-                            <li class="float_left"><a href="#" title="Messages"><i class="fa fa-envelope"></i></a></li>
-                            <li class="float_left"><a href="#" title="Notifications"><i class="fa fa-bell"></i><span class="cust-badge green">3</span></a>
+                            <li class="float_left active"><a href="#" style="height: 100%;"><i class="fa fa-home margin_right"></i>Logo</a></li>
+                            <li class="float_left"><a href="#" title="News" style="height: 100%;"><i class="fa fa-globe"></i></a></li>
+                            <li class="float_left"><a href="#" title="Settings" style="height: 100%;"><i class="fa fa-user"></i></a></li>
+                            <li class="float_left"><a href="#" title="Messages" style="height: 100%;"><i class="fa fa-envelope"></i></a></li>
+                            <li class="float_left "><button class="notification-button padding-zero"><a href="#" title="Notifications"><i class="fa fa-bell"></i><span class="cust-badge green">3</span></a></button>
                                 <div class="sub-menu">
                                     <ul>
                                       <li><a href="#">One new friend request</a></li>
@@ -38,9 +40,9 @@
                     </div>
                     <div class="small-screen-navbar">
                         <div class="active"><a href="#" class="float_left"><i class="fa fa-home margin_right"></i>Logo</a></div>
-                        <ul class="float_right ">
+                        <ul style="width: 100%;">
                             <li id="myNavbar" class="float_right"><a href="#" title="Menu"><i class="fa fa-bars"></i></a></li>
-                                <div id="myMenu" class="small-screen-menu">
+                                <div id="myMenu" class="small-screen-menu" >
                                     <ul>
                                         <li><a href="#">Link1</a></li>
                                         <li><a href="#">Link2</a></li>
@@ -158,11 +160,11 @@
                 
 
                 <!--*************    MIDDLE COLUMN    *************-->
-                <div class="col-lg-7" style="padding-left: 0px; padding-right: 0px;">
+                <div class="col-lg-7 middle-column-padding">
                     <div class="card">
                         <div class="cust-padding">
-                            <h6 class="custom-opacity">Social Media template by w3.css</h6>
-                            <p contenteditable="true" style="border: 1px solid #ccc" class="cust-padding">Status: Feeling Blue</p>
+                            <h6 class="custom-opacity cust-padding">Social Media template by w3.css</h6>
+                            <input type="text" id="text" name="post-text" class="cust-padding padding_left custom-margin-bottom status-post" placeholder="Status: Feeling Blue"><br>
                             <button class="button-cust-style theme"><i class="fa fa-pencil"></i> Post</button> 
                         </div>
                     </div>
@@ -180,7 +182,7 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora esse sunt corrupti, aliquam explicabo iusto doloribus sint tempore dolore commodi facere, vel id nesciunt minima recusandae omnis architecto nihil. Modi!</p>
                         <div class="custom-margin-bottom">
-                            <img src="../Images/lights.jpg" alt="Northen Lights" style="float: left;" class="half_width">
+                            <img src="../Images/lights.jpg" alt="Northen Lights" style="float: left;" class="half_width cust-margin-bottom">
                             <img src="../Images/nature.jpg" alt="Nature" style="float: right;" class="half_width">
                         </div>
                         <div class="custom-margin-bottom">
@@ -232,20 +234,20 @@
 
                 <!-- *************    RIGHT COLUMN    *************-->
                 <div class="col-lg-2">
-                    <div class="card">
-                        <p style="text-align: center;" class="para">Upcoming Events:</p>
-                        <img src="../Images/forest.jpg" alt="Forest" style="width: 100%;">
-                        <p style="text-align: center;" class="para"><strong>Holiday</strong></p>
-                        <p style="text-align: center;" class="para"><strong>Friday 15:00</strong></p>
-                        <p style="text-align: center;" class="para"><strong>Info</strong></p>
+                    <div class="card padding_top">
+                        <p  class="text-align-to-centre">Upcoming Events:</p>
+                        <img src="../Images/forest.jpg" alt="Forest" style="width: 100%;" class="custom-margin-bottom">
+                        <p  class="text-align-to-centre"><strong>Holiday</strong></p>
+                        <p  class="text-align-to-centre">Friday 15:00</p>
+                        <p><button class="cust-padding info-btn" style="width: 100%;">Info</button></p>
                     </div>
 
-                    <div class="card">
+                    <div class="card padding_top">
                         <p style="text-align: center; font-size: 15px;">Friend Request</p>
                         <img src="../Images/avatar6.png" alt="Avatar" style="width: 50%; margin-left: auto; margin-right: auto;">
                         <p style=" text-align: center;"> Jane Doe</p>
                         <div class="custom-opacity">
-                        <button type="button" title="Accept" class="accept_button reject-button-color float_right"><i class="fa fa-check"></i></button>
+                        <button type="button" title="Accept" class="accept_button reject-button-color float_left"><i class="fa fa-check"></i></button>
                         <button type="button" title="Reject" class="accept_button accept_button_color float_left"><i class="fa fa-remove"></i></button>
                         </div>
                     </div>
